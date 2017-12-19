@@ -47,7 +47,7 @@ print("Filtered commit dates:")
 
 results = [[] for ext in extensions]
 dates = []
-for commit in commits[:2]:
+for commit in commits:
     if date == None or commit.committed_date < (date - interval_seconds) or commits[-1] == commit:
         date = commit.committed_date
 
