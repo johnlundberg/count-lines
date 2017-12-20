@@ -55,7 +55,7 @@ for commit in commits:
         interval_seconds = min(max_interval_seconds, interval_seconds * 2) 
 
         filtered_commits.append(commit)
-        git.checkout(commit.hexsha)
+        git.checkout(commit.hexsha, force=True)
         dates.append(datetime.datetime.fromtimestamp(date))
         result = count_lines(extensions)
         for i in range(len(result)):
