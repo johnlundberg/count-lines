@@ -17,7 +17,7 @@
     <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
     <Environment>
     </Environment>
-    <CommandLineArguments>"E:/git/analyze2" ".cs,.vb"</CommandLineArguments>
+    <CommandLineArguments>increment "E:/git/analyze2" ".cs,.vb"</CommandLineArguments>
     <InterpreterArguments>
     </InterpreterArguments>
   </PropertyGroup>
